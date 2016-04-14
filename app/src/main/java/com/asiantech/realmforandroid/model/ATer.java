@@ -3,32 +3,35 @@ package com.asiantech.realmforandroid.model;
 /**
  * Created by honhattan on 4/13/16.
  */
+
 import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.Ignore;
 
 // Your model just have to extend RealmObject.
 // This will inherit an annotation which produces proxy getters and setters for all fields.
-public class Person extends RealmObject {
-
+public class ATer extends RealmObject {
     // All fields are by default persisted.
+    public static final String FIELD_NAME = "name";
+    public static final String FIELD_AGE = "age";
+    public static final String FIELD_MOTOBIKE = "motobike";
+    public static final String FIELD_LAPTOP = "laptop";
     private String name;
     private int age;
 
     // Other objects in a one-to-one relation must also subclass RealmObject
-    private Dog dog;
+    private MotoBike motobike;
 
     // One-to-many relations is simply a RealmList of the objects which also subclass RealmObject
-    private RealmList<Cat> cats;
+    private RealmList<Laptop> laptop;
 
     // You can instruct Realm to ignore a field and not persist it.
     @Ignore
     private int tempReference;
 
-    private long id;
 
     // Let your IDE generate getters and setters for you!
-    // Or if you like you can even have public fields and no accessors! See Dog.java and Cat.java
+    // Or if you like you can even have public fields and no accessors! See MotoBike.java and Laptop.java
     public String getName() {
         return name;
     }
@@ -45,20 +48,20 @@ public class Person extends RealmObject {
         this.age = age;
     }
 
-    public Dog getDog() {
-        return dog;
+    public MotoBike getMotobike() {
+        return motobike;
     }
 
-    public void setDog(Dog dog) {
-        this.dog = dog;
+    public void setMotobike(MotoBike motobike) {
+        this.motobike = motobike;
     }
 
-    public RealmList<Cat> getCats() {
-        return cats;
+    public RealmList<Laptop> getLaptop() {
+        return laptop;
     }
 
-    public void setCats(RealmList<Cat> cats) {
-        this.cats = cats;
+    public void setLaptop(RealmList<Laptop> laptop) {
+        this.laptop = laptop;
     }
 
     public int getTempReference() {
@@ -69,11 +72,5 @@ public class Person extends RealmObject {
         this.tempReference = tempReference;
     }
 
-    public long getId() {
-        return id;
-    }
 
-    public void setId(long id) {
-        this.id = id;
-    }
 }
