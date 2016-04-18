@@ -16,10 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".BaseRealmActivity"></activity>
-        <activity android:name=".InsertActivity"></activity>
+        <activity android:name=".json.JsonActivity"></activity>
         <activity android:name=".AddActivity"></activity>
-        <activity android:name=".DeleteActivity"></activity>
-        <activity android:name=".QueryActivity"></activity>
+        <activity android:name=".ThreadActivity"></activity>
+        <activity android:name=".basic.BasicActivity"></activity>
     </application>
 
 </manifest>

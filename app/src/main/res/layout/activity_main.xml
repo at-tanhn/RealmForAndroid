@@ -12,22 +12,22 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnAdd"
+            android:id="@+id/btnBasic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add" />
+            android:text="Basic" />
 
         <Button
-            android:id="@+id/btnInsert"
+            android:id="@+id/btnJson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Insert" />
+            android:text="Json" />
 
         <Button
-            android:id="@+id/btnQuery"
+            android:id="@+id/btnThread"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Query" />
+            android:text="Thread" />
 
         <Button
             android:id="@+id/btnDelete"

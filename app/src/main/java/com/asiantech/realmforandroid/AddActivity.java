@@ -22,7 +22,7 @@ public class AddActivity extends BaseRealmActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_realm_example);
         mEdtATerName = (EditText) findViewById(R.id.edtAterName);
         mEdtATerAge = (EditText) findViewById(R.id.edtAterTeam);
         mEdtMotoBikeColor = (EditText) findViewById(R.id.edtMotoBikeColor);
