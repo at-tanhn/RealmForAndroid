@@ -1,4 +1,4 @@
-package com.asiantech.realmforandroid;
+package com.asiantech.realmforandroid.migration;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,15 +6,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.asiantech.realmforandroid.model.ATer;
-import com.asiantech.realmforandroid.model.MotoBike;
+import com.asiantech.realmforandroid.BaseRealmActivity;
+import com.asiantech.realmforandroid.R;
+import com.asiantech.realmforandroid.basic.model.ATer;
+import com.asiantech.realmforandroid.basic.model.MotoBike;
 
 import io.realm.RealmChangeListener;
 
 /**
  * Created by honhattan on 4/13/16.
  */
-public class AddActivity extends BaseRealmActivity {
+public class MigrationActivity extends BaseRealmActivity {
     EditText mEdtATerName, mEdtATerAge;
     EditText mEdtMotoBikeName, mEdtMotoBikeColor;
     Button mBtnAdd;
@@ -50,7 +52,7 @@ public class AddActivity extends BaseRealmActivity {
         realm.addChangeListener(new RealmChangeListener() {
             @Override
             public void onChange() {
-                Toast.makeText(AddActivity.this, "Added", Toast.LENGTH_LONG).show();
+                Toast.makeText(MigrationActivity.this, "Added", Toast.LENGTH_LONG).show();
             }
         });
 

@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 
 import com.asiantech.realmforandroid.basic.BasicActivity;
 import com.asiantech.realmforandroid.json.JsonActivity;
+import com.asiantech.realmforandroid.migration.MigrationActivity;
+import com.asiantech.realmforandroid.thread.ThreadActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,11 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnBasic = (Button) findViewById(R.id.btnBasic);
         Button btnJson = (Button) findViewById(R.id.btnJson);
         Button btnThread = (Button) findViewById(R.id.btnThread);
-        Button btnDelete = (Button) findViewById(R.id.btnDelete);
+        Button btnMigration = (Button) findViewById(R.id.btnMigration);
         btnBasic.setOnClickListener(this);
         btnJson.setOnClickListener(this);
         btnThread.setOnClickListener(this);
-        btnDelete.setOnClickListener(this);
+        btnMigration.setOnClickListener(this);
     }
 
 
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent1 = new Intent(MainActivity.this, BasicActivity.class);
                 startActivity(intent1);
                 break;
-            case R.id.btnDelete:
+            case R.id.btnThread:
                 Intent intent2 = new Intent(MainActivity.this, ThreadActivity.class);
                 startActivity(intent2);
                 break;
@@ -51,8 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent3 = new Intent(MainActivity.this, JsonActivity.class);
                 startActivity(intent3);
                 break;
-            case R.id.btnThread:
-                Intent intent4 = new Intent(MainActivity.this, ThreadActivity.class);
+            case R.id.btnMigration:
+                Intent intent4 = new Intent(MainActivity.this, MigrationActivity.class);
                 startActivity(intent4);
                 break;
 

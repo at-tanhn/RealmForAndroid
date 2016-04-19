@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.asiantech.realmforandroid.R;
-import com.asiantech.realmforandroid.model.ATer;
+import com.asiantech.realmforandroid.basic.model.ATer;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.asiantech.realmforandroid.model;
+package com.asiantech.realmforandroid.basic.model;
 
 import io.realm.RealmObject;
 

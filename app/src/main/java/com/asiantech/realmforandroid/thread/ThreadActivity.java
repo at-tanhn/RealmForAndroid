@@ -1,6 +1,8 @@
-package com.asiantech.realmforandroid;
+package com.asiantech.realmforandroid.thread;
 
 import android.os.Bundle;
+
+import com.asiantech.realmforandroid.BaseRealmActivity;
 
 /**
  * Created by honhattan on 4/13/16.

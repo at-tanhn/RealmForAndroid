@@ -1,11 +1,10 @@
 package com.asiantech.realmforandroid.json;
 
-import com.asiantech.realmforandroid.BaseRealmActivity;
-import com.asiantech.realmforandroid.R;
-
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.GridView;
+
+import com.asiantech.realmforandroid.BaseRealmActivity;
+import com.asiantech.realmforandroid.R;
 
 import org.json.JSONObject;
 
@@ -15,8 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.realm.Realm;
-import io.realm.RealmConfiguration;
 /**
  * Created by honhattan on 4/13/16.
  */
@@ -24,7 +21,7 @@ public class JsonActivity extends BaseRealmActivity {
 
     private GridView mGridView;
     private CityAdapter mAdapter;
- //   private Realm realm;
+    //   private Realm realm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +38,7 @@ public class JsonActivity extends BaseRealmActivity {
         super.onResume();
 
         // Load from file "cities.json" first time
-        if(mAdapter == null) {
+        if (mAdapter == null) {
             List<City> cities = null;
             try {
                 cities = loadCities();
@@ -60,7 +57,6 @@ public class JsonActivity extends BaseRealmActivity {
             mGridView.invalidate();
         }
     }
-
 
 
     public List<City> loadCities() throws IOException {

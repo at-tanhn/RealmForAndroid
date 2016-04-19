@@ -30,9 +30,9 @@
             android:text="Thread" />
 
         <Button
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnMigration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete"></Button>
+            android:text="Migration"></Button>
     </LinearLayout>
 </ScrollView>

@@ -16,6 +16,6 @@
 #   public *;
 #}
 -keepclassmembers class fqcn.of.javascript.interface.for.webview
--keepclassmembers class com.asiantech.realmforandroid.AddActivity
+-keepclassmembers class com.asiantech.realmforandroid.migration.MigrationActivity
 -keepclassmembers class com.asiantech.realmforandroid.MainActivity
 

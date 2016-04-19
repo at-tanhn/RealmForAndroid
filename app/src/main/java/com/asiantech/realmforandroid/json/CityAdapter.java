@@ -3,6 +3,7 @@ package com.asiantech.realmforandroid.json;
 /**
  * Created by honhattan on 4/18/16.
  */
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

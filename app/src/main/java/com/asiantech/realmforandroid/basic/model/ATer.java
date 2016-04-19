@@ -1,4 +1,4 @@
-package com.asiantech.realmforandroid.model;
+package com.asiantech.realmforandroid.basic.model;
 
 /**
  * Created by honhattan on 4/13/16.

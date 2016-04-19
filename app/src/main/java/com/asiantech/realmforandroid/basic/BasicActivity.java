@@ -10,8 +10,8 @@ import android.widget.EditText;
 
 import com.asiantech.realmforandroid.BaseRealmActivity;
 import com.asiantech.realmforandroid.R;
-import com.asiantech.realmforandroid.model.ATer;
-import com.asiantech.realmforandroid.model.MotoBike;
+import com.asiantech.realmforandroid.basic.model.ATer;
+import com.asiantech.realmforandroid.basic.model.MotoBike;
 
 import java.util.ArrayList;
 import java.util.List;
